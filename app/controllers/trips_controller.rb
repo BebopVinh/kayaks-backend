@@ -1,14 +1,19 @@
 class TripsController < ApplicationController
 
 
+  # def index
+  #   if logged_in?
+  #     @trips = current_user.trips
+  #     render json: @trips
+  #   else
+  #   @trips = Trip.all
+  #   render json: @trips
+  #   end
+  # end
+
   def index
-    if logged_in?
-      @trips = current_user.trips
-      render json: @trips
-    else
     @trips = Trip.all
     render json: @trips
-    end
   end
 
   def show

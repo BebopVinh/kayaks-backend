@@ -21,7 +21,7 @@ User.create(name: 'cynthia', password_digest: '123')
 User.create(name: 'john', password_digest: '123')
 User.create(name: 'lola', password_digest: '123')
 
-Trip.create(name: 'block island', water_type: 'bay', start_date: '8-4-19', end_date: '8/5/19')
+Trip.create(name: 'block island', water_type: 'bay', start_date: '8/4/19', end_date: '8/5/19')
 Trip.create(name: 'hudson valley', water_type: 'river', start_date: '8/10/19', end_date: '8/12/19')
 Trip.create(name: 'florida keys', water_type: 'flat', start_date: '9/4/19', end_date: '9/15/19')
 Trip.create(name: 'finger islands', water_type: 'lake', start_date: '9/20/19', end_date: '9/30/19')

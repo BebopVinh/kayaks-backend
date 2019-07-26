@@ -2,4 +2,21 @@ class Trip < ApplicationRecord
 
   has_many :comments, :dependent => :destroy
   has_many :users, through: :comments
+
+  def self.get_image
+    Trip.all.each do |trip|
+      if trip.water_type == 'lake'
+        @image = 'https://images.unsplash.com/photo-1446717157973-03f219469f59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+      elsif trip.water_type == 'ocean'
+        @image = 'https://images.unsplash.com/photo-1497290756760-23ac55edf36f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+      elsif trip.water_type == 'river'
+        @image = 'https://images.unsplash.com/photo-1459524472745-8aa28d2d2a6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+      end
+      trip.update(image: @image)
+    end
+  end
+
+
+
+
 end

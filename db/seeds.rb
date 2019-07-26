@@ -28,7 +28,9 @@ Trip.create(id: 4, name: 'finger islands', water_type: 'lake', start_date: '9/20
 Trip.create(id: 5, name: 'williamette', water_type: 'river', start_date: '10/2/19', end_date: '10/5/19')
 Trip.create(id: 6, name: 'big bend', water_type: 'river', start_date: '11/20/19', end_date: '11/27/19')
 Trip.create(id: 7, name: 'harlem', water_type: 'flat', start_date: '9/17/19', end_date: '9/17/19')
-Trip.create(id: 8, name: 'iceland', water_type: 'crater lake', start_date: '10/20/19', end_date: '11/1/19')
+Trip.create(id: 8, name: 'iceland', water_type: 'lake', start_date: '10/20/19', end_date: '11/1/19')
+
+Trip.get_image
 #
 # Trip.create(name: 'block island', water_type: 'bay')
 # Trip.create(name: 'hudson valley', water_type: 'river')

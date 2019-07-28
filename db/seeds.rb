@@ -17,9 +17,11 @@ Trip.destroy_all
 Comment.destroy_all
 
 
-User.create(id: 1, name: 'cynthia', password_digest: '123')
-User.create(id: 2, name: 'john', password_digest: '123')
-User.create(id: 3, name: 'lola', password_digest: '123')
+User.create(id: 2, name: 'cynthia', password: '123')
+User.create(id: 1, name: 'john', password: '123')
+User.create(id: 4, name: 'lola', password: '123')
+User.create(id: 3, name: 'tookie', password: '123')
+
 
 Trip.create(id: 1, name: 'block island', water_type: 'bay', start_date: '8/4/19', end_date: '8/5/19')
 Trip.create(id: 2, name: 'hudson valley', water_type: 'river', start_date: '8/10/19', end_date: '8/12/19')

@@ -23,6 +23,7 @@ class TripsController < ApplicationController
 
   def create
     @trip = Trip.find_or_create_by(trip_params)
+    Trip.get_image
     render json: @trip
   end
 
@@ -34,7 +35,7 @@ class TripsController < ApplicationController
   private
 
   def trip_params
-    params.require(:trip).permit(:name, :water_type, :start_date, :end_date)
+    params.require(:trip).permit(:name, :water_type, :start_date, :end_date, :image)
   end
 
 end

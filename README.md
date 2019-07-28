@@ -1,4 +1,4 @@
-come on kayak 
+# come on kayak 
 
 Keep track of your uncoming trips, post comments, or create a new trip.  
 

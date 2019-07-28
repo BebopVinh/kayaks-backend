@@ -17,24 +17,32 @@ Trip.destroy_all
 Comment.destroy_all
 
 
-User.create(name: 'cynthia', password_digest: '123')
-User.create(name: 'john', password_digest: '123')
-User.create(name: 'lola', password_digest: '123')
+User.create(id: 2, name: 'cynthia', password: '123')
+User.create(id: 1, name: 'john', password: '123')
+User.create(id: 4, name: 'lola', password: '123')
+User.create(id: 3, name: 'tookie', password: '123')
 
-Trip.create(name: 'block island', water_type: 'bay', start_date: '8-4-19', end_date: '8/5/19')
-Trip.create(name: 'hudson valley', water_type: 'river', start_date: '8/10/19', end_date: '8/12/19')
-Trip.create(name: 'florida keys', water_type: 'flat', start_date: '9/4/19', end_date: '9/15/19')
-Trip.create(name: 'finger islands', water_type: 'lake', start_date: '9/20/19', end_date: '9/30/19')
+
+Trip.create(id: 1, name: 'block island', water_type: 'bay', start_date: '8/4/19', end_date: '8/5/19')
+Trip.create(id: 2, name: 'hudson valley', water_type: 'river', start_date: '8/10/19', end_date: '8/12/19')
+Trip.create(id: 3, name: 'florida keys', water_type: 'ocean', start_date: '9/4/19', end_date: '9/15/19')
+Trip.create(id: 4, name: 'finger islands', water_type: 'lake', start_date: '9/20/19', end_date: '9/30/19')
+Trip.create(id: 5, name: 'williamette', water_type: 'river', start_date: '10/2/19', end_date: '10/5/19')
+Trip.create(id: 6, name: 'big bend', water_type: 'river', start_date: '11/20/19', end_date: '11/27/19')
+Trip.create(id: 7, name: 'harlem', water_type: 'ocean', start_date: '9/17/19', end_date: '9/17/19')
+Trip.create(id: 8, name: 'iceland', water_type: 'lake', start_date: '10/20/19', end_date: '11/1/19')
+
+Trip.get_image
 #
 # Trip.create(name: 'block island', water_type: 'bay')
 # Trip.create(name: 'hudson valley', water_type: 'river')
 # Trip.create(name: 'florida keys', water_type: 'flat')
 # Trip.create(name: 'finger islands', water_type: 'lake')
 
-Comment.create(content: 'it was great!', user_id: 1, trip_id: 1)
-Comment.create(content: 'i agree!', user_id: 2, trip_id: 1)
-Comment.create(content: 'first time for me, liked it', user_id: 3, trip_id: 1)
-Comment.create(content: 'rainy, cold', user_id: 1, trip_id: 2)
-Comment.create(content: 'it was great!', user_id: 2, trip_id: 3)
-Comment.create(content: 'saw an alligator', user_id: 3, trip_id: 4)
-Comment.create(content: 'me too!', user_id: 1, trip_id: 4)
+Comment.create(id: 1, content: 'it was great!', user_id: 1, trip_id: 1)
+Comment.create(id: 2, content: 'i agree!', user_id: 2, trip_id: 1)
+Comment.create(id: 3, content: 'first time for me, liked it', user_id: 3, trip_id: 1)
+Comment.create(id: 4, content: 'rainy, cold', user_id: 1, trip_id: 2)
+Comment.create(id: 5, content: 'it was great!', user_id: 2, trip_id: 3)
+Comment.create(id: 6, content: 'saw an alligator', user_id: 3, trip_id: 4)
+Comment.create(id: 7, content: 'me too!', user_id: 1, trip_id: 4)

@@ -16,6 +16,11 @@ class TripsController < ApplicationController
     render json: @trips
   end
 
+  def new
+    @trip = Trip.new
+    render json: @trip
+  end
+
   def show
     @trip = Trip.find(params[:id])
     render json: @trip
@@ -33,7 +38,7 @@ class TripsController < ApplicationController
   end
 
   def create
-    
+
 
     @trip = Trip.find_or_create_by(trip_params)
     Trip.get_image

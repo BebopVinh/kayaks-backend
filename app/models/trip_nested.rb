@@ -5,8 +5,9 @@ class Trip < ApplicationRecord
   # validates :water_type, presence: true
   # validates :name, presence: true
 
-
-
+  validates :name, presence: true
+  accepts_nested_attributes_for :comments, allow_destroy: true
+end
 
 
 

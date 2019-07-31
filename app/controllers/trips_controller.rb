@@ -17,11 +17,24 @@ class TripsController < ApplicationController
   end
 
   def show
-    @trip = Trip.find_by(params[:id])
+    @trip = Trip.find(params[:id])
+    render json: @trip
+  end
+
+  def update
+    @trip = Trip.find(params[:id])
+    @trip.update(trip_params)
+    @comments = Comment.all
+
+
+    # @comment = Trip.comment.find(params[:id])
+    # @comment = trip.comment
     render json: @trip
   end
 
   def create
+    
+
     @trip = Trip.find_or_create_by(trip_params)
     Trip.get_image
     render json: @trip

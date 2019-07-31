@@ -32,12 +32,8 @@ Trip.create(id: 6, name: 'big bend', water_type: 'river', start_date: '11/20/19'
 Trip.create(id: 7, name: 'harlem', water_type: 'ocean', start_date: '9/17/19', end_date: '9/17/19')
 Trip.create(id: 8, name: 'iceland', water_type: 'lake', start_date: '10/20/19', end_date: '11/1/19')
 
-Trip.get_image
 #
-# Trip.create(name: 'block island', water_type: 'bay')
-# Trip.create(name: 'hudson valley', water_type: 'river')
-# Trip.create(name: 'florida keys', water_type: 'flat')
-# Trip.create(name: 'finger islands', water_type: 'lake')
+
 
 Comment.create(id: 1, content: 'it was great!', user_id: 1, trip_id: 1)
 Comment.create(id: 2, content: 'i agree!', user_id: 2, trip_id: 1)
